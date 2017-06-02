@@ -3,7 +3,7 @@ Front-End Web Development Nano-Degree - Feed Reader Testing Project
 
 What Is It?
 -----------
-In this project I learned how to use Jasmine [Jasmine](http://jasmine.github.io/) to write a series of test suites against a pre-existing application that reads RSS feeds.
+In this project I learned how to use [Jasmine](http://jasmine.github.io/) to write a series of test suites against a pre-existing application that reads RSS feeds.
 
 
 What Did I Learn?
