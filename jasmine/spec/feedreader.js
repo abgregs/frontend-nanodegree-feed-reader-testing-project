@@ -72,7 +72,8 @@ $(function() {
     * the feed contains at least one entry.
     */
     describe('Initial Entries', function() {
-      var feed;
+      var feed,
+      entries;
 
       beforeEach(function(done) {
         feed = $('.feed');
@@ -81,7 +82,10 @@ $(function() {
       });
 
       it('should contain at least one entry', function () {
-        expect(feed.length).not.toBe(0);
+        entries = $('.feed .entry');
+        // console.log(entries.length);
+
+        expect(entries.length).toBeGreaterThan(0);
 
       });
 
@@ -114,16 +118,10 @@ $(function() {
 
       it('has new content', function() {
         // Compare content of first article entry header in each feed.
-        expect(firstTitle === secondTitle).toBe(false);
+        expect(firstTitle).not.toEqual(secondTitle);
 
       });
 
-      // Reload initial feed.
-      afterEach(function(done) {
-        feed = $('.feed');
-        feed.empty();
-        loadFeed(0, done);
-      });
     });
 
 
